@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram name="PS26 - Carpooling &amp; Expense Splitter" id="0">
+    <mxGraphModel dx="2060" dy="1054" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;spacingTop=12;fontStyle=1;strokeWidth=2;" value="Peer-to-Peer Carpooling &amp; Expense Splitter System" vertex="1">
+          <mxGeometry height="590" width="720" x="250" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rider" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;&lt;actor&gt;&gt;&lt;br&gt;Rider Commuter" vertex="1">
+          <mxGeometry height="95" width="55" x="100" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="driver" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;&lt;actor&gt;&gt;&lt;br&gt;Driver Host" vertex="1">
+          <mxGeometry height="95" width="55" x="100" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="verify" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;&lt;actor&gt;&gt;&lt;br&gt;Verification Service" vertex="1">
+          <mxGeometry height="95" width="55" x="1060" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-01&lt;br&gt;Publish Carpool Ride" vertex="1">
+          <mxGeometry height="75" width="190" x="315" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-02&lt;br&gt;Search Compatible Rides" vertex="1">
+          <mxGeometry height="75" width="210" x="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-03&lt;br&gt;Calculate Route Compatibility" vertex="1">
+          <mxGeometry height="75" width="220" x="580" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-04&lt;br&gt;Request / Confirm Ride" vertex="1">
+          <mxGeometry height="75" width="190" x="315" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-05&lt;br&gt;Calculate Fuel Cost Share" vertex="1">
+          <mxGeometry height="75" width="210" x="315" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-06&lt;br&gt;Verify Driver License" vertex="1">
+          <mxGeometry height="75" width="210" x="580" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" value="UC-07&lt;br&gt;Manage Ride" vertex="1">
+          <mxGeometry height="65" width="180" x="580" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="rider" style="endArrow=none;html=1;" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="rider" style="endArrow=none;html=1;" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="rider" style="endArrow=none;html=1;" target="uc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="driver" style="endArrow=none;html=1;" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" source="driver" style="endArrow=none;html=1;" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" source="driver" style="endArrow=none;html=1;" target="uc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" source="verify" style="endArrow=none;html=1;" target="uc6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="uc2" style="dashed=1;endArrow=block;endFill=0;html=1;rounded=0;" target="uc3" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pTaGuA98BFEV0Vjq_2Du-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Name: Dhruv Purushotham&lt;br&gt;SRN: PES1UG24CS154&lt;br&gt;SEC: C" vertex="1">
+          <mxGeometry height="30" width="455" x="700" y="690" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
